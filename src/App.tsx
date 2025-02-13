@@ -66,7 +66,7 @@ export const avengerList = [
 export default function Gallery() {
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
-  const hasBack = index < 0;
+  const hasBack = index > 0;
   const hasNext = index < avengerList.length - 1;
 
   function handleBackClick() {
